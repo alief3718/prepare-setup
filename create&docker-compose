@@ -1,0 +1,13 @@
+sleep 10
+mkdir -p /volume1/docker/transmission/data > /dev/null 2>&1 
+mkdir -p /volume2/media/tr/downloads > /dev/null 2>&1 
+mkdir -p /volume1/docker/plex > /dev/null 2>&1 
+mkdir -p /volume1/docker/emby > /dev/null 2>&1
+mkdir -p /volume1/docker/radarr/data > /dev/null 2>&1 
+mkdir -p /volume1/docker/sonarr/data > /dev/null 2>&1 
+mkdir -p /volume1/docker/speedtest/data > /dev/null 2>&1 
+mkdir -p /volume1/docker/rclone > /dev/null 2>&1
+
+sleep 3
+cd .docker > /dev/null 2>&1
+docker compose up -d
